@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "commonCd" table = "kpi_common_cd">
+      
+      <meta attribute = "class-description">
+         This class contains the common_code detail. 
+      </meta>
+      
+      <id name = "NUM_CD" type = "int" column = "NUM_CD">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "ALPH_CD" column = "ALPH_CD" type = "string"/>
+      <property name = "CODE_TYPE" column = "CODE_TYPE" type = "string"/>
+      <property name = "CODE_DESC" column = "CODE_DESC" type = "string"/>
+      <property name = "CREATE_ID" column = "CREATE_ID" type = "int"/>
+      <property name = "CREATE_DT" column = "CREATE_DT" type = "date"/>
+      
+   </class>
+</hibernate-mapping>
